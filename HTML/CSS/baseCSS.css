@@ -1,0 +1,779 @@
+:root {
+    /* --------------------- CB -> Color Primary (Collabera Blue) --*/
+    --C-PL: #b6e5ff; /*----  var(--C-PL)         ----*/
+    --C-P: #0aa7ff; /*----  var(--C-P)          ----*/
+    --C-P-dark-1: #3cb9ff; /*----  var(--C-P-dark-1)   ----*/
+    --C-P-dark-2: #65c8ff; /*----  var(--C-P-dark-2)   ----*/
+    --C-P-dark-3: #8dd6ff; /*----  var(--C-P-dark-3)   ----*/
+    --C-P-dark-4: #9ddcff; /*----  var(--C-P-dark-4)   ----*/
+    --C-P-light-1: #359edb; /*----  var(--C-P-light-1)  ----*/
+    --C-P-light-2: #5db1e2; /*----  var(--C-P-light-2)  ----*/
+    --C-P-light-3: #9acfed; /*----  var(--C-P-light-3)  ----*/
+    --C-P-light-4: #d7ecf8; /*----  var(--C-P-light-4)  ----*/
+
+    /* --------------------- Extended Colors -> Collabera Blue --*/
+    --C-EP-1: #b1e3ff; /*----  var(--C-EP-1)  ----*/
+    --C-EP-2: #c4eaff; /*----  var(--C-EP-2)  ----*/
+    --C-EP-3: #d8f1ff; /*----  var(--C-EP-3)  ----*/
+    --C-EP-4: #ebf8ff; /*----  var(--C-EP-4)  ----*/
+    --C-EP-5: #dff0f9; /*----  var(--C-EP-5)  ----*/
+    --C-EP-6: #e7f4fb; /*----  var(--C-EP-6)  ----*/
+    --C-EP-7: #eff7fc; /*----  var(--C-EP-7)  ----*/
+    --C-EP-8: #f7fbfe; /*----  var(--C-EP-8)  ----*/
+
+    /* --------------------- CS -> Colour Secondary (Tenure Green) --*/
+    --C-S: #05262b; /*----  var(--C-S)          ----*/
+    --C-SL: #6cbfb5; /*----  var(--C-SL)         ----*/
+    --C-S-dark-1: #0c4048; /*----  var(--C-S-dark-1)   ----*/
+    --C-S-dark-2: #27717c; /*----  var(--C-S-dark-2)   ----*/
+    --C-S-dark-3: #649aa2; /*----  var(--C-S-dark-3)   ----*/
+    --C-S-dark-4: #adcfd4; /*----  var(--C-S-dark-4)   ----*/
+    --C-S-light-1: #1a6566; /*----  var(--C-S-light-1)  ----*/
+    --C-S-light-2: #178888; /*----  var(--C-S-light-2)  ----*/
+    --C-S-light-3: #6cbfb5; /*----  var(--C-S-light-3)  ----*/
+    --C-S-light-4: #b1f4dc; /*----  var(--C-S-light-4)  ----*/
+
+    /* --------------------- Extended Tints Colors -> Tenure Green --*/
+
+    --C-ES-1: #bdd9dd; /*----  var(--C-ES-1)  ----*/
+    --C-ES-2: #cee2e5; /*----  var(--C-ES-2)  ----*/
+    --C-ES-3: #deecee; /*----  var(--C-ES-3)  ----*/
+    --C-ES-4: #eff5f6; /*----  var(--C-ES-4)  ----*/
+    --C-ES-5: #c1f6e3; /*----  var(--C-ES-5)  ----*/
+    --C-ES-6: #d0f8ea; /*----  var(--C-ES-6)  ----*/
+    --C-ES-7: #e0fbf1; /*----  var(--C-ES-7)  ----*/
+    --C-ES-8: #effdf8; /*----  var(--C-ES-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Sophisticated Purple --*/
+    --C-SP: #1d0a26; /*----  var(--C-SP)         ----*/
+    --C-SPL: #451460; /*----  var(--C-SPL)        ----*/
+    --C-SP-dark-1: #451460; /*----  var(--C-SP-dark-1)  ----*/
+    --C-SP-dark-2: #685188; /*----  var(--C-SP-dark-2)  ----*/
+    --C-SP-dark-3: #a891c9; /*----  var(--C-SP-dark-3)  ----*/
+    --C-SP-dark-4: #d9cffe; /*----  var(--C-SP-dark-4)  ----*/
+    --C-SP-light-1: #5d1b81; /*----  var(--C-SP-light-1) ----*/
+    --C-SP-light-2: #913dbf; /*----  var(--C-SP-light-2) ----*/
+    --C-SP-light-3: #c293dc; /*----  var(--C-SP-light-3) ----*/
+    --C-SP-light-4: #e7d4f1; /*----  var(--C-SP-light-4) ----*/
+
+    /* --------------------- Extended Tints Colors -> Sophisticated Purple --*/
+    --C-ESP-1: #e1d9fe; /*----  var(--C-ESP-1)  ----*/
+    --C-ESP-2: #e8e2fe; /*----  var(--C-ESP-2)  ----*/
+    --C-ESP-3: #f0ecff; /*----  var(--C-ESP-3)  ----*/
+    --C-ESP-4: #f7f5ff; /*----  var(--C-ESP-4)  ----*/
+    --C-ESP-5: #ecddf4; /*----  var(--C-ESP-5)  ----*/
+    --C-ESP-6: #f1e5f7; /*----  var(--C-ESP-6)  ----*/
+    --C-ESP-7: #f5eef9; /*----  var(--C-ESP-7)  ----*/
+    --C-ESP-8: #faf6fc; /*----  var(--C-ESP-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Classic Gold --*/
+    --C-CG: #645233; /*----  var(--C-CG)         ----*/
+    --C-CGL: #aa9269; /*----  var(--C-CGL)        ----*/
+    --C-CG-dark-1: #836d48; /*----  var(--C-CG-dark-1)  ----*/
+    --C-CG-dark-2: #aa9269; /*----  var(--C-CG-dark-2)  ----*/
+    --C-CG-dark-3: #d0bc9a; /*----  var(--C-CG-dark-3)  ----*/
+    --C-CG-dark-4: #e3d9c7; /*----  var(--C-CG-dark-4)  ----*/
+    --C-CG-light-1: #98794c; /*----  var(--C-CG-light-1) ----*/
+    --C-CG-light-2: #c39e61; /*----  var(--C-CG-light-2) ----*/
+    --C-CG-light-3: #f0d09d; /*----  var(--C-CG-light-3) ----*/
+    --C-CG-light-4: #f9ecd8; /*----  var(--C-CG-light-4) ----*/
+
+    /* --------------------- Extended Tints Colors -> Classic Gold --*/
+    --C-ECG-1: #e9e1d2; /*----  var(--C-ECG-1)  ----*/
+    --C-ECG-2: #eee8dd; /*----  var(--C-ECG-2)  ----*/
+    --C-ECG-3: #f4f0e9; /*----  var(--C-ECG-3)  ----*/
+    --C-ECG-4: #f9f7f4; /*----  var(--C-ECG-4)  ----*/
+    --C-ECG-5: #faf0e0; /*----  var(--C-ECG-5)  ----*/
+    --C-ECG-6: #fbf4e8; /*----  var(--C-ECG-6)  ----*/
+    --C-ECG-7: #fdf7ef; /*----  var(--C-ECG-7)  ----*/
+    --C-ECG-8: #fefbf7; /*----  var(--C-ECG-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Collaborative Charcoal --*/
+    --C-CC: #171717; /*----  var(--C-CC)         ----*/
+    /*----  var(--C-CCL) is not defined in Brand Guidelines   ----*/
+    --C-CC-dark-1: #2e2e2e; /*----  var(--C-CC-dark-1)  ----*/
+    --C-CC-dark-2: #454545; /*----  var(--C-CC-dark-2)  ----*/
+    --C-CC-dark-3: #5d5d5d; /*----  var(--C-CC-dark-3)  ----*/
+    --C-CC-dark-4: #747474; /*----  var(--C-CC-dark-4)  ----*/
+    --C-CC-light-1: #a2a2a2; /*----  var(--C-CC-light-1) ----*/
+    --C-CC-light-2: #b9b9b9; /*----  var(--C-CC-light-2) ----*/
+    --C-CC-light-3: #d1d1d1; /*----  var(--C-CC-light-3) ----*/
+    --C-CC-light-4: #e8e8e8; /*----  var(--C-CC-light-4) ----*/
+
+    /* --------------------- Extended Tints Colors -> Collaborative Charcoal --*/
+    --C-ECC-1: #909090; /*----  var(--C-ECC-1)  ----*/
+    --C-ECC-2: #acacac; /*----  var(--C-ECC-2)  ----*/
+    --C-ECC-3: #c7c7c7; /*----  var(--C-ECC-3)  ----*/
+    --C-ECC-4: #e3e3e3; /*----  var(--C-ECC-4)  ----*/
+    --C-ECC-5: #ededed; /*----  var(--C-ECC-5)  ----*/
+    --C-ECC-6: #f1f1f1; /*----  var(--C-ECC-6)  ----*/
+    --C-ECC-7: #f6f6f6; /*----  var(--C-ECC-7)  ----*/
+    --C-ECC-8: #fafafa; /*----  var(--C-ECC-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Collaborative White --*/
+    --C-WT: #ffffff; /*----  var(--C-WT)         ----*/
+
+    /* --------------------- Supporting Colors -> Error --*/
+    --C-E-1: #f7dfd7; /*----  var(--E-1)  ----*/
+    --C-E-2: #f0c0b0; /*----  var(--E-2)  ----*/
+    --C-E-3: #e9a088; /*----  var(--E-3)  ----*/
+    --C-E-4: #e28161; /*----  var(--E-4)  ----*/
+    --C-E-5: #d44212; /*----  var(--E-5)  ----*/
+    --C-E-6: #8d2c0c; /*----  var(--E-6)  ----*/
+    --C-E-7: #461606; /*----  var(--E-7)  ----*/
+    --C-E-8: #150601; /*----  var(--E-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Warning --*/
+    --C-W-1: #f7f0d8; /*----  var(--W-1)  ----*/
+    --C-W-2: #f0e1b1; /*----  var(--W-2)  ----*/
+    --C-W-3: #d2a515; /*----  var(--W-3)  ----*/
+    --C-W-4: #a88410; /*----  var(--W-4)  ----*/
+    --C-W-5: #7e630c; /*----  var(--W-5)  ----*/
+    --C-W-6: #544208; /*----  var(--W-6)  ----*/
+    --C-W-7: #2a2104; /*----  var(--W-7)  ----*/
+    --C-W-8: #151002; /*----  var(--W-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Success --*/
+    --C-S-1: #d7f5d8; /*----  var(--S-1)  ----*/
+    --C-S-2: #afebb1; /*----  var(--S-2)  ----*/
+    --C-S-3: #88e18b; /*----  var(--S-3)  ----*/
+    --C-S-4: #11c317; /*----  var(--S-4)  ----*/
+    --C-S-5: #0c9211; /*----  var(--S-5)  ----*/
+    --C-S-6: #08610b; /*----  var(--S-6)  ----*/
+    --C-S-7: #043005; /*----  var(--S-7)  ----*/
+    --C-S-8: #011302; /*----  var(--S-8)  ----*/
+
+    /* --------------------- Supporting Colors -> Information --*/
+    --C-I-1: #d7e8f7; /*----  var(--I-1)  ----*/
+    --C-I-2: #b0d2ef; /*----  var(--I-2)  ----*/
+    --C-I-3: #88bbe8; /*----  var(--I-3)  ----*/
+    --C-I-4: #61a5e0; /*----  var(--I-4)  ----*/
+    --C-I-5: #1278d1; /*----  var(--I-5)  ----*/
+    --C-I-6: #0c508b; /*----  var(--I-6)  ----*/
+    --C-I-7: #062845; /*----  var(--I-7)  ----*/
+    --C-I-8: #010c14; /*----  var(--I-8)  ----*/
+}
+
+/* ------------------------------------- Fonts Styles ----*/
+/*------------ Regular ------------*/
+/*-- Body Text --*/
+.rh-regular-paraBody {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*-- Display --*/
+.rh-regular-display {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H1 --*/
+.rh-regular-h1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H2 --*/
+.rh-regular-h2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H3 --*/
+.rh-regular-h3 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H4 --*/
+.rh-regular-h4 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H5 --*/
+.rh-regular-h5 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H6 --*/
+.rh-regular-h6 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title1 --*/
+.rh-regular-subTitle1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title2 --*/
+.rh-regular-subTitle2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Helper Text --*/
+.rh-regular-helper {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Label Text --*/
+.rh-regular-label {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Small Text --*/
+.rh-regular-small {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+    color: var(--C-CC-dark-2);
+}
+
+/*------------ SemiBold ------------*/
+/*--  Body Text --*/
+.rh-sb-paraBody {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Display --*/
+.rh-sb-display {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H1 --*/
+.rh-sb-h1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H2 --*/
+.rh-sb-h2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H3 --*/
+.rh-sb-h3 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H4 --*/
+.rh-sb-h4 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H5 --*/
+.rh-sb-h5 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H6 --*/
+.rh-sb-h6 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title1 --*/
+.rh-sb-subTitle1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title2 --*/
+.rh-sb-subTitle2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 19px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Helper Text --*/
+.rh-sb-helper {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Label Text --*/
+.rh-sb-label {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Small Text --*/
+.rh-sb-small {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 8px;
+    color: var(--C-CC-dark-2);
+}
+
+/*------------ SemiBold ------------*/
+/*--  Body Text --*/
+.rh-b-paraBody {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Display --*/
+.rh-b-display {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H1 --*/
+.rh-b-h1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H2 --*/
+.rh-b-h2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H3 --*/
+.rh-b-h3 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H4 --*/
+.rh-b-h4 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H5 --*/
+.rh-b-h5 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  H6 --*/
+.rh-b-h6 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title1 --*/
+.rh-b-subTitle1 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Sub Title2 --*/
+.rh-b-subTitle2 {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Helper Text --*/
+.rh-b-helper {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Label Text --*/
+.rh-b-label {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: var(--C-CC-dark-2);
+}
+
+/*--  Small Text --*/
+.rh-b-small {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8px;
+    color: var(--C-CC-dark-2);
+}
+
+/* ------------------------------------- Base Body Layout ---- */
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Red Hat", sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.leftSection {
+    width: 56px;
+    height: 100vh;
+    background-color: var(--C-S);
+    position: fixed;
+}
+
+.rightSection {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--C-WT);
+}
+
+/* ------------------------------------- Column Layouts ---- */
+.sevenColumn {
+    flex: 1 1 14.28%;
+}
+
+.fiveColumn {
+    flex: 1 1 20%;
+}
+
+.fourColumn {
+    flex: 1 1 25%;
+}
+
+.threeColumn {
+    flex: 1 0 20%;
+}
+
+.twoColumn {
+    flex: 1 1 50%;
+}
+
+/* ------------------------------------- Navigation Bar ---- */
+.leftSection .leftNavBar {
+    width: 100%;
+    height: 100%;
+}
+.leftNavBar .section1 {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--C-CC-light-2);
+}
+.leftNavBar .section2 {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--C-CC-light-2);
+}
+
+.leftNavBar .section2 .iconContainer{
+    height:auto !important;
+}
+
+.leftNavBar .section2 i{
+    padding: 15px 0 15px 0;
+}
+
+.leftNavBar input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.leftNavBar input:checked + i{
+    color: var(--C-P);
+  }
+
+/* ------------------------------------- Icon Container ---- */
+.iconContainer {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    color: var(--C-WT);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.iconContainer:hover {
+    color: var(--C-S-light-4);
+    cursor: pointer;
+}
+
+.iconContainer a {
+    color: var(--C-WT);
+}
+
+/* ------------------------------------- App Header Bar ---- */
+.appHeaderBar {
+    width: 100%;
+    height: 56px;
+    background-color: var(--C-S-dark-2);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: fixed;
+    left: 56px;
+    z-index: 1;
+}
+
+.logoSpace {
+    padding: 0 15px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--C-CC-light-2);
+}
+
+.globalSearchBar {
+    width: 0 0 33%;
+    border: 1px solid orange;
+}
+
+.user {
+    width: max-content;
+    height: 100%;
+    padding-right: 15px;
+    border-left: 1px solid orange;
+}
+
+/* ------------------------------------- WorkArea Base Layout ---- */
+.workArea {
+    max-width: 1440px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--C-ECC-8);
+    position: relative;
+    top: 56px;
+    left: 56px;
+}
+
+.customRow-H {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.customRow-H-spread {
+    display: flex;
+    justify-content: space-around;
+}
+
+.customRow-V {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.border-B {
+    border-bottom: 1px solid var(--C-ECC-4);
+}
+
+.border {
+    border: 1px solid var(--C-ECC-4);
+}
+
+.m-t {
+    margin-top: 15px;
+}
+
+.m-r {
+    margin-right: 15px;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.m-l {
+    margin-left: 15px;
+}
+
+.p-t {
+    padding-top: 15px;
+}
+
+.p-r {
+    padding-right: 15px;
+}
+
+.p-b {
+    padding-bottom: 15px;
+}
+
+.p-l {
+    padding-left: 15px;
+}
+
+/*---- Colour Sample classes ----*/
+.colorSample {
+    width: 150px;
+    height: 85px;
+    border-radius: 15px;
+}
+
+.colorName {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--C-CC-dark-2);
+    align-self: center;
+}
+
+.block1 > ul > li {
+    display: inline-block;
+    text-align: center;
+}
+
+.colorShadow {
+    box-shadow: 0 1px 2px var(--C-CC-light-3);
+}
