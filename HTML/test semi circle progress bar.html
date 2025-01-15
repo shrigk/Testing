@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border: 2px solid brown"></canvas>
+    <img id="myImage" src="ps.png" alt="" style="display: none;">
+    <script>
+        const canvas= document.getElementById("myCanvas");
+        const ctx= canvas.getContext('2d');
+        const img= document.getElementById('myImage');
+
+        //function to convert Degree to Radians
+        function degToRad(degree){
+            return degree * (Math.PI/180);
+        }
+        
+        //Create background of Progress Bar
+        const bXCenter = canvas.width/2;
+        const bYCenter = canvas.height/2;
+        const bRadius = 100;
+        const bStartAngle = degToRad(210);
+        const bEndAngle = degToRad(330);
+
+        ctx.strokeStyle = "#B6E5FF";
+        ctx.lineWidth = 10;
+        ctx.lineCap = "round";
+
+        ctx.beginPath();
+        ctx.arc(bXCenter, bYCenter, bRadius, bStartAngle, bEndAngle);
+        ctx.stroke();
+
+        //Create foreground of Progress Bar
+        const fXCenter = canvas.width/2;
+        const fYCenter = canvas.height/2;
+        const fRadius = 100;
+        const fStartAngle = degToRad(210);
+        const fEndAngle = degToRad(270);
+
+        ctx.strokeStyle = "#913DBF";
+        ctx.lineWidth = 10;
+        ctx.lineCap = "round";
+
+        ctx.beginPath();
+        ctx.arc(fXCenter, fYCenter, fRadius, fStartAngle, fEndAngle);
+        ctx.stroke();
+
+        //Load the image on start position
+        img.onload = function(){
+            drawImageAtAngle(fStartAngle);
+        }
+
+        //function to draw image at specific angle
+        function drawImageAtAngle(angle){
+            //ctx.clearRect(0,0, canvas.width, canvas.height);
+            const x = bXCenter + bRadius * Math.cos(angle) - img.width/2;
+            const y = bXCenter + bRadius * Math.sin(angle) - img.height/2;
+            console.log (x, y, angle);
+            ctx.drawImage(img, x, y);
+        }
+
+        //Update the image position based on mouse movement
+        canvas.addEventListener('mousemove', function(event) {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = event.clientX - rect.left;
+            const mouseY = event.clientY - rect.top;
+            const angle = Math.atan2(mouseY - bYCenter, mouseX - bXCenter);
+            if (angle >= bStartAngle && angle <= bEndAngle){
+                drawImageAtAngle(angle);
+                console.log ("condition is success");
+            }
+        });
+
+    </script>
+</body>
+</html>
