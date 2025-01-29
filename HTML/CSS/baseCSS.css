@@ -566,6 +566,7 @@ ul {
     height: 100vh;
     background-color: var(--C-S);
     position: fixed;
+    z-index: 1;
 }
 
 .rightSection {
@@ -796,4 +797,5 @@ ul {
     font-size: 12px;
     font-weight: 500;
     padding: 4px 10px;
+    z-index: 9999;
 }
