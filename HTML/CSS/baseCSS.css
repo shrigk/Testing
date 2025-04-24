@@ -799,3 +799,57 @@ ul {
     padding: 4px 10px;
     z-index: 9999;
 }
+/*---- Modal classes ----*/
+/* Modal Background */
+.modalBackground {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+.modalWidth90{
+    width:90%;
+}
+
+/* Modal Content */
+.modal-content {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Width adjusts to content */
+    max-width: 90%; /* Prevents it from being too wide */
+}
+
+/* Modal Header */
+.modalHeader{
+    background-color: white;
+    padding:10px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+/* Modal Title */
+.modalTitle{
+    display: inline-block;
+    margin:0;
+}
+
+/* Close Button */
+.close {
+    float: right;
+    cursor: pointer;
+    color:#b9b9b9;
+}
+.close:hover {
+    color: red;
+}

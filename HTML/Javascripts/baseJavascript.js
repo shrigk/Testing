@@ -1,3 +1,4 @@
+// ---------------------------------- Tool tip 
 var tooltips = document.querySelectorAll('.tool_tip span');
 
 window.onmousemove = function (e) {
@@ -8,3 +9,28 @@ window.onmousemove = function (e) {
         tooltips[i].style.left = x;
     }
 };
+
+
+// ---------------------------------- Modal open and close
+document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("modalBackground");
+    var openBtn = document.getElementById("openModal");
+    var closeBtn = document.querySelector(".close");
+
+    // Open Modal
+    openBtn.addEventListener("click", function () {
+        modal.style.display = "block";
+    });
+
+    // Close Modal
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    // Close Modal on Outside Click
+    window.addEventListener("click", function (event) {
+        if (event.target === modalBackground) {
+            modal.style.display = "none";
+        }
+    });
+});
