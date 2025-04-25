@@ -153,6 +153,8 @@
     --C-I-7: #062845; /*----  var(--I-7)  ----*/
     --C-I-8: #010c14; /*----  var(--I-8)  ----*/
 }
+body{font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;}
 /* Grid Container */
 .grid {
     display: grid;
