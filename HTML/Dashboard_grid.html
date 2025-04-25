@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+        <title>::Collabera Template - Grid System::</title>
+        <!-- Embed Brand fonts from Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet"/>
+
+        <!-- our project just needs Font Awesome Solid + Brands -->
+        <link href="Assets/css/fontawesome.css" rel="stylesheet" />
+        <link href="Assets/css/brands.css" rel="stylesheet" />
+        <link href="Assets/css/solid.css" rel="stylesheet" />
+        <link href="Assets/css/regular.css" rel="stylesheet" />
+        <link href="Assets/css/light.css" rel="stylesheet" />
+
+        <!-- Base CSS file -->
+        <link rel="stylesheet" type="text/css" href="CSS/grid_base_customCSS.css" />
+        
+        <!-- Custom Font Awesome Icons Link -->
+        <script src="https://kit.fontawesome.com/dd80bb9c19.js" crossorigin="anonymous" ></script>
+    </head>
+    <!-- End of Head Section -->
+
+    <body class="rh-regular-paraBody">
+        <div class="layout collapsed" id="layout">
+            <header class="header">
+                <button class="toggle-btn" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></button>
+            🌐 Header</header>
+        
+            <aside class="sidebar collapsed" id="sidebar">
+              
+              <div class="menu-item tool_tip"><i class="fa-solid fa-image"></i> <span id="tooltip-span">Menu Item A</span></div>
+              <div class="menu-item tool_tip"><i class="fa-solid fa-image"></i> <span id="tooltip-span">Menu Item B</span></div>
+              <div class="menu-item tool_tip"><i class="fa-solid fa-image"></i> <span id="tooltip-span">Menu Item C</span></div>
+              <div class="menu-item tool_tip"><i class="fa-solid fa-image"></i> <span id="tooltip-span">Menu Item D</span></div>
+              <div class="menu-item tool_tip"><i class="fa-solid fa-image"></i> <span id="tooltip-span">Menu Item E</span></div>
+            </aside>
+
+        
+            <main class="main">
+              <section class="typography-section">
+                <div class="sectionHeading">Typography </div>
+                <div class="typography-grid">
+                    <div class="column regular">
+                        <h3>Regular Styles</h3>
+                        <p>Body Text / Paragraph Text</p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p class="subtitle1">Sub Title 1</p>
+                        <p class="subtitle2">Sub Title 2</p>
+                        <p class="helper">Helper Text</p>
+                        <p class="label">Label Text</p>
+                        <p class="small">Small Text</p>
+                    </div>
+
+                    <div class="column semibold">
+                        <h3>SemiBold Styles</h3>
+                        <p>Body Text / Paragraph Text</p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p class="subtitle1">Sub Title 1</p>
+                        <p class="subtitle2">Sub Title 2</p>
+                        <p class="helper">Helper Text</p>
+                        <p class="label">Label Text</p>
+                        <p class="small">Small Text</p>
+                    </div>
+
+                    <div class="column bold">
+                        <h3>Bold Styles</h3>
+                        <p>Body Text / Paragraph Text</p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p class="subtitle1">Sub Title 1</p>
+                        <p class="subtitle2">Sub Title 2</p>
+                        <p class="helper">Helper Text</p>
+                        <p class="label">Label Text</p>
+                        <p class="small">Small Text</p>
+                    </div>
+                 </div>
+                </section>
+                <section class="brand-colors">
+                  <div class="sectionHeading">Colors</div>
+                  <h3>Collabera Brand Colors</h3>
+                  <div class="color-grid">
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-P);"></div>
+                      <p>Collabera Blue</p>
+                    </div>
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-S);"></div>
+                      <p>Tenure Green</p>
+                    </div>
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-SP);"></div>
+                      <p>Sophisticated Purple</p>
+                    </div>
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-CG);"></div>
+                      <p>Classic Gold</p>
+                    </div>
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-CC);"></div>
+                      <p>Collaborative Charcoal</p>
+                    </div>
+                    <div class="color-item">
+                      <div class="color-swatch" style="background-color: var(--C-WT); border: 1px solid #ccc;"></div>
+                      <p>Collaborative White</p>
+                    </div>
+                  </div>
+                </section>
+
+
+
+            </main>
+        
+            <footer class="footer">Collabera Design System</footer>
+          </div>
+
+       
+    </body>
+    <script src="Javascripts/baseJavascript.js"></script>    
+    </html>
