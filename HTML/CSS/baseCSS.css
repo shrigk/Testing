@@ -550,10 +550,34 @@
 
 /* ------------------------------------- Base Body Layout ---- */
 body {
-    display: flex;
-    flex-direction: row;
+    background-color: var(--c-ecc-7);
     font-family: "Red Hat", sans-serif;
 }
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header header header header header header header "
+      "leftNav content content content content content content content content content content content"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-columns: 1fr 10fr;
+    gap: 0px;
+    background-color: var(--C-ECC-7);
+  }
+
+  .container > div.header {
+    grid-area: header;
+    text-align: center;
+  }
+  .container > div.menu {
+    grid-area: menu;
+  }
+  .container > div.content {
+    grid-area: content;
+  }
+  .container > div.footer {
+    grid-area: footer;
+  }
 
 ul {
     list-style: none;
